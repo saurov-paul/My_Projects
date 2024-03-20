@@ -1,35 +1,3 @@
-// let rectangle = document.querySelector("#rectangle");
-
-// rectangle.addEventListener("mouseover", function (details) {
-//   let rectangleLocation = rectangle.getBoundingClientRect();
-//   let mouseLocationOnRect = details.clientX - rectangleLocation.left;
-
-//   if (mouseLocationOnRect < rectangleLocation.width / 2) {
-//     let redColor = gsap.utils.mapRange(
-//       0,
-//       rectangleLocation.width / 2,
-//       255,
-//       0,
-//       mouseLocationOnRect
-//     );
-//     gsap.to(rectangle, {
-//       backgroundColor: `rgb(${redColor},0,0)`,
-//       ease: Power4.easeOut,
-//     });
-//   } else {
-//     let blueColor = gsap.utils.mapRange(
-//       0,
-//       rectangleLocation.width / 2,
-//       255,
-//       0,
-//       mouseLocationOnRect
-//     );
-//     gsap.to(rectangle, {
-//       backgroundColor: `rgb(0,0,${blueColor})`,
-//       ease: Power4.easeOut,
-//     });
-//   }
-// });
 
 let rectangle = document.querySelector("#rectangle");
 
