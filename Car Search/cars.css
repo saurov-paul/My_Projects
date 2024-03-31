@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  width: 100%;
+  height: 100vh;
+  background: url(carbg1.jpg) center no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  background-color: #123259a7;
+  height: 90%;
+  width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 10px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inputelem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  opacity: 1;
+  margin: 25px;
+  font-size: 1.2 / Users/s2400188/Downloads/carbg.jpgrem;
+}
+
+.form-container label {
+  display: block;
+  font-weight: bold;
+  flex: 1;
+  text-align: right;
+  padding-right: 60px;
+  opacity: 1;
+}
+
+.form-container input {
+  display: block;
+  flex: 1;
+  max-width: 300px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-container button#addcar {
+  background-color: #daa336;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.form-container button#reset {
+  background-color: #0a9396;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.form-container button#addcar:hover {
+  background-color: #aec3b0;
+  color: #124559;
+}
+.form-container button#reset:hover {
+  background-color: #aec3b0;
+  color: #124559;
+}
+#cardata {
+  width: 100%;
+  height: 100%;
+}
+
+#cardata h2 {
+  text-align: center;
+  color: #124559;
+}
+
+.car-table {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.car-table th,
+.car-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.car-table th {
+  background-color: #aec3b0;
+  color: #124559;
+}
+.searchBox {
+  position: absolute;
+  right: 6rem;
+}
+.searchBox input {
+  width: 200px;
+  height: 30px;
+  border: #124559 1px solid;
+  border-radius: 3px;
+  text-align: center;
+}
+.searchBox button {
+  width: 70px;
+  height: 30px;
+  background-color: #aec3b0;
+  border: none;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #124559;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="cars.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="overlay">
+        <h2>Insert Car Data</h2>
+        <div class="inputelem">
+          <label for="licenseNumber">Licence Number</label>
+          <input
+            type="text"
+            id="licenseNumber"
+            placeholder="Enter Licence Number"
+          />
+        </div>
+        <div class="inputelem">
+          <label for="carMaker">Car Maker</label>
+          <input type="text" id="carMaker" placeholder="Enter Car Maker" />
+        </div>
+        <div class="inputelem">
+          <label for="carModel">Car Model</label>
+          <input type="text" id="carModel" placeholder="Enter Car Model" />
+        </div>
+        <div class="inputelem">
+          <label for="carOwner">Car Owner</label>
+          <input type="text" id="carOwner" placeholder="Enter Car Owner" />
+        </div>
+        <div class="inputelem">
+          <label for="carPrice">Car Price</label>
+          <input type="text" id="carPrice" placeholder="Enter Car Price" />
+        </div>
+        <div class="inputelem">
+          <label for="carColor">Car Color</label>
+          <input type="text" id="carColor" placeholder="Enter Car Color" />
+        </div>
+        <div class="inputelem btn">
+          <button id="addcar"">Add Car</button>
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="cardata">
+      <div class="searchBox">
+        <input type="text" id="searchInput" placeholder="Search by Car Details" />
+        <button id="searchButton">Search</button>
+      </div>
+      
+      <table class="car-table">
+        <h2>Cars Database</h2>
+
+        
+        <thead>
+          <tr>
+            <th>Licence Number</th>
+            <th>Car Maker</th>
+            <th>Car Model</th>
+            <th>Car Owner</th>
+            <th>Car Price</th>
+            <th>Car Color</th>
+          </tr>
+        </thead>
+        <tbody id="carTableBody">
+          <!-- Car data rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+    <script src="cars.js"></script>
+  </body>
+</html>
