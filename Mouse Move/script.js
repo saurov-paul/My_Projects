@@ -1,4 +1,3 @@
-
 let rectangle = document.querySelector("#rectangle");
 
 rectangle.addEventListener("mousemove", function (details) {
@@ -20,16 +19,15 @@ rectangle.addEventListener("mousemove", function (details) {
   } else {
     let blueColor = gsap.utils.mapRange(
       rectangleLocation.width / 2,
+      rectangleLocation.width,
       0,
       255,
-      0,
       mouseLocationOnRect
     );
     gsap.to(rectangle, {
-      backgroundColor: `rgb(0,0, ${blueColor})`,
+      backgroundColor: `rgb(0,0,${blueColor})`,
       ease: Power4,
     });
-    console.log("right");
   }
 });
 
