@@ -1,11 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 60px;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, rgb(54, 54, 54), rgb(250, 238, 183));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  animation: bobbingText 2s ease-in-out infinite alternate;
+}
+
+@keyframes bobbingText {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 #rectangle {
   width: 500px;
@@ -14,7 +36,6 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 
   border: 1px solid #e76f51;
 }
